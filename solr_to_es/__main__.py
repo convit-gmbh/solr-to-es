@@ -23,7 +23,7 @@ class SolrEsWrapperIter:
         doc = next(self.solr_itr)
         new_doc = dict()
         new_doc['_index'] = self.index
-        new_doc['_type'] = self.type
+        #new_doc['_type'] = self.type
         new_doc['_source'] = doc
         if self.id_field:
             new_doc['_id'] = doc[self.id_field]
